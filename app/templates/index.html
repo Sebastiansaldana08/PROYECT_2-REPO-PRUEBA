@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estado de Conexión</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    {% if host and user %}
+        <p>Host: {{ host }}</p>
+        <p>Usuario: {{ user }}</p>
+    {% else %}
+        <p>Información de conexión no disponible.</p>
+    {% endif %}
+</body>
+</html>
