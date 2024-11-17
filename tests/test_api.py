@@ -1,7 +1,7 @@
 import unittest
 import requests
 
-BASE_URL = "http://127.0.0.1:5000/api"  # Cambia si usas otra dirección o puerto
+BASE_URL = "http://127.0.0.1:5000/api"
 
 class TestAPI(unittest.TestCase):
 
