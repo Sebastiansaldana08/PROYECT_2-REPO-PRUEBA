@@ -9,6 +9,7 @@ from .routes.intercambio import intercambio_blueprint
 from .routes.valoracion_intercambio import valoracion_intercambio_blueprint
 from .routes.historial_propiedad import historial_propiedad_blueprint
 from .routes.notificaciones import notificaciones_blueprint
+from .routes.neo4j_routes import neo4j_blueprint  # Agregamos el blueprint de Neo4j
 
 def create_app():
     app = Flask(__name__)
@@ -23,6 +24,7 @@ def create_app():
     app.register_blueprint(valoracion_intercambio_blueprint)
     app.register_blueprint(historial_propiedad_blueprint)
     app.register_blueprint(notificaciones_blueprint)
+    app.register_blueprint(neo4j_blueprint)  # Registro de las rutas de Neo4j
     
     return app
 
